@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <title>XSLT</title>
+    <style type="text/css">
+
+        body {
+            font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        textarea {
+            display: block;
+            min-height: 300px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .error #result textarea {
+            color: red;
+        }
+
+        div {
+            position: relative;
+            margin: 1em 0;
+        }
+
+        div:after {
+            content: attr(id);
+            display: block;
+            position: absolute;
+            right: -2px;
+            top: 0;
+            font-size: 0.6em;
+            color: gray;
+            border: 1px solid;
+            border-bottom-left-radius: 5px;;
+            padding: 0.2em 0.5em;
+        }
+    </style>
+</head>
+<body>
+<div id="xml"><textarea></textarea></div>
+<div id="xslt"><textarea></textarea></div>
+<div id="result"><textarea></textarea></div>
+
+<button>Transform</button>
+
+<script type="text/javascript" src="xslt.js"></script>
+</body>
+</html>
